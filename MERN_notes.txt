@@ -1,0 +1,44 @@
+Server request codes
+
+  200 OK
+  300 Multiple choices
+  301 Moved Permanently
+  302 Found
+  304 Not modified 
+  307 temporary Redirected
+  400 Bad request
+  401 Unauthorized
+  403 Forbidden
+  404 Not Found
+  410 Gone
+  500 Internal server error
+  501 Not implemented
+  503 service unavailable
+  550 Permission denied
+
+                                      BACKEND
+
+Dependencies
+
+  NodeJs       : https://nodejs.org/docs/latest-v10.x/api/
+                                OR
+                https://nodejs.dev/learn/introduction-to-nodejs
+
+  ExpressJs    : https://expressjs.com/en/4x/api.html#express
+
+  body-parser  : https://www.npmjs.com/package/body-parser
+
+  jsonwebtoken : https://www.npmjs.com/package/jsonwebtoken
+
+  mongoose     : https://www.npmjs.com/package/mongoose
+
+  mongodb      : https://docs.mongodb.com/manual/tutorial/getting-started/
+
+  nodemon      : https://www.npmjs.com/package/nodemon
+
+
+Database models
+
+  made models/user.js
+  read about crypto, mongoose virtual, uuid
+
