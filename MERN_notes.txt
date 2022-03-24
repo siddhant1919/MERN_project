@@ -30,8 +30,8 @@ Dependencies
 
   jsonwebtoken : https://www.npmjs.com/package/jsonwebtoken
 
-  mongoose     : https://www.npmjs.com/package/mongoose
-
+  mongoose     : https://mongoosejs.com/docs/guide.html
+  
   mongodb      : https://docs.mongodb.com/manual/tutorial/getting-started/
 
   nodemon      : https://www.npmjs.com/package/nodemon
