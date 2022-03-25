@@ -40,22 +40,25 @@ const userSchemaa = new Schema({
     type: Array,
     default: []
   }
-});
+},
+  {
+    timestamps: true
+  });
 
 userSchemaa.virtual("password")
-  .set(function(password){
+  .set(function (password) {
     this._password = password
     this.salt = uuidv1();
     this.encry_password = this.securePassword(password)
   })
-  .get(function(){
+  .get(function () {
     return this._password
   })
 
 
 userSchemaa.method = {
 
-  authenticate: function(plainpassword){
+  authenticate: function (plainpassword) {
     return this.securePassword(plainpassword) === this.encry_password
   },
 

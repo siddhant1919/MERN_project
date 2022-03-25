@@ -22,7 +22,7 @@ Dependencies
 
   NodeJs       : https://nodejs.org/docs/latest-v10.x/api/
                                 OR
-                https://nodejs.dev/learn/introduction-to-nodejs
+                 https://nodejs.dev/learn/introduction-to-nodejs
 
   ExpressJs    : https://expressjs.com/en/4x/api.html#express
 
@@ -31,14 +31,34 @@ Dependencies
   jsonwebtoken : https://www.npmjs.com/package/jsonwebtoken
 
   mongoose     : https://mongoosejs.com/docs/guide.html
-  
+
   mongodb      : https://docs.mongodb.com/manual/tutorial/getting-started/
 
   nodemon      : https://www.npmjs.com/package/nodemon
 
+  uuid         : https://www.npmjs.com/package/uuid
+
+  crypto       : https://nodejs.org/docs/latest-v10.x/api/crypto.html
+
+  dotenv       : https://www.npmjs.com/package/dotenv
+
+
+
 
 Database models
 
-  made models/user.js
+  created schema for user (models/user.js)
   read about crypto, mongoose virtual, uuid
+
+  created schema for category (models/category.js)
+  created schema for product i.e Tshirt (models/product.js)
+  created schema for order and productInCart (models/order.js)
+  connected mongoDB to application
+  Created Environment variable file (.env)
+
+
+Middlewares
+  
+
+
 
