@@ -4,10 +4,17 @@ const app = express()
 const hostname = '127.0.0.1'
 const port = 3000
 
-var AdminPerson = true
+var isPersonLoggedIn = true
+var AdminPerson = false
+
 
 const admin = (req, res) => {
   return res.send("<h1>Admin</h1>")
+}
+
+const isLoggedIn = (req, res, next) => {
+  if(isPersonLoggedIn) return next()
+  else res.send("<h1>Please Log In</h1>")
 }
 
 const isAdmin = (req, res, next) => {
@@ -17,7 +24,7 @@ const isAdmin = (req, res, next) => {
   }
 }
 
-app.get('/admin', isAdmin, admin)
+app.get('/admin', isLoggedIn, isAdmin, admin)
 
 app.get('/', (req, res) => {
   res.send("<h1>Hello World</h1>")
