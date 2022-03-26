@@ -11,6 +11,7 @@ Server request codes
   403 Forbidden
   404 Not Found
   410 Gone
+  422 unable to process the contained instructions
   500 Internal server error
   501 Not implemented
   503 service unavailable
@@ -28,6 +29,10 @@ Dependencies
 
   body-parser  : https://www.npmjs.com/package/body-parser
 
+  cookie-parser: https://www.npmjs.com/package/cookie-parser
+
+  cors         : https://www.npmjs.com/package/cors
+
   jsonwebtoken : https://www.npmjs.com/package/jsonwebtoken
 
   mongoose     : https://mongoosejs.com/docs/guide.html
@@ -41,6 +46,10 @@ Dependencies
   crypto       : https://nodejs.org/docs/latest-v10.x/api/crypto.html
 
   dotenv       : https://www.npmjs.com/package/dotenv
+
+  express-validator: https://express-validator.github.io/docs/
+
+  
 
 
 
@@ -58,6 +67,14 @@ Database models
 
 
 Middlewares
+
+  Read about body-parser, cookie-parser, cors.
+  created routes/authentication.js
+  created controllers/authentication.js (in which the functions are stored to be passed in routes/authentication.js)
+  Saving a user to Database in (controllers/authentication.js)
+  Read about express-validator
+  Added validation in signup route (routes/authentication.js)
+  Added Custom error message for validation in (controllers/authentication.js)
   
 
 
