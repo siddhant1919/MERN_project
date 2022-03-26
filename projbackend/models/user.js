@@ -5,7 +5,7 @@ const crypto = require('crypto')
 
 const { v1: uuidv1 } = require('uuid');
 
-const userSchemaa = new Schema({
+const userSchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -45,7 +45,7 @@ const userSchemaa = new Schema({
     timestamps: true
   });
 
-userSchemaa.virtual("password")
+userSchema.virtual("password")
   .set(function (password) {
     this._password = password
     this.salt = uuidv1();
@@ -56,14 +56,14 @@ userSchemaa.virtual("password")
   })
 
 
-userSchemaa.method = {
+userSchema.methods = {
 
   authenticate: function (plainpassword) {
     return this.securePassword(plainpassword) === this.encry_password
   },
 
   securePassword: function (plainpassword) {
-    if (!password) return "";
+    if (!plainpassword) return "";
     try {
       return crypto
         .createHmac('sha256', this.salt)
@@ -76,4 +76,4 @@ userSchemaa.method = {
 }
 
 
-module.exports = mongoose.model("User", userSchemaa)
+module.exports = mongoose.model("User", userSchema)
