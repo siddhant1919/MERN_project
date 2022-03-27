@@ -35,6 +35,8 @@ Dependencies
 
   jsonwebtoken : https://www.npmjs.com/package/jsonwebtoken
 
+  express-jwt  : https://www.npmjs.com/package/express-jwt 
+
   mongoose     : https://mongoosejs.com/docs/guide.html
 
   mongodb      : https://docs.mongodb.com/manual/tutorial/getting-started/
@@ -49,8 +51,9 @@ Dependencies
 
   express-validator: https://express-validator.github.io/docs/
 
-  
+  How tokens work : https://jwt.io/introduction
 
+  
 
 
 
@@ -75,6 +78,18 @@ Middlewares
   Read about express-validator
   Added validation in signup route (routes/authentication.js)
   Added Custom error message for validation in (controllers/authentication.js)
+
+Tokens
+
+  Read about jsonwebtoken, express-jwt, cookie-parser
+  Created SECRET in .env
+  Created controller for signin and signout
+  Created controller for middleware to check if user is signed in (isSignedIn)
+  Created controller for middleware to check for the authentication (isAuthenticated)
+  Created controller for middleware to check for the Admin (isAdmin)
+  Created signin route and test route
+  
+
   
 
 
