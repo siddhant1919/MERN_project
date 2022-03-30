@@ -89,7 +89,14 @@ Tokens
   Created controller for middleware to check for the Admin (isAdmin)
   Created signin route and test route
   
+  
+Params
 
+  Created routes for user (routes/user.js)
+  Created controllers for user (controllers/user.js)
+  fixed bug in authentication.js (controllers/authentication.js)
+  Created route to getUserById and update the user (routes/user.js)
+  Created controllers getUserById ,getUser, updateUser (controllers/user.js)
   
 
 
