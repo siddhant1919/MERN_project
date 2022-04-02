@@ -47,6 +47,7 @@ exports.updateUser = (req, res) => {
 }
 
 
+// Controller to to Get Purchase list of user
 exports.userPurchaseList = (req, res) => {
   Order.find({ user: req.profile._id })
     .populate("user", "_id name")
@@ -57,6 +58,37 @@ exports.userPurchaseList = (req, res) => {
 
       return res.json(order)
     })
+}
+
+// Middleware
+exports.pushOrderInPurchaseList = (req, res, next) => {
+  
+  let purchases = []
+  req.body.order.products.forEach(product => {
+    purchases.push({
+      _id: product._id,
+      name: product.name,
+      description: product.description,
+      category: product.category,
+      quatity: product.quantity,
+      amount: req.body.order.amount,
+      transaction_id: req.body.order.transaction_id
+    })
+  }) 
+
+  // Store this in DB
+  User.findOneAndUpdate(
+    {_id: req.profile._id},
+    {$push: {purchases: purchases}},
+    {new: true},
+    (err, purchases) => {
+      if (err) {
+        return res.status(400).json({ error: "Enable to save purchase list" })
+      }
+
+      next()
+    }
+  )
 }
 
 
