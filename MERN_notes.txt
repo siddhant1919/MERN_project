@@ -97,7 +97,21 @@ Params
   fixed bug in authentication.js (controllers/authentication.js)
   Created route to getUserById and update the user (routes/user.js)
   Created controllers getUserById ,getUser, updateUser (controllers/user.js)
-  
+
+  Created Route for Getting Purchase list for user (routes/user.js)
+  Created controller for userPurchaseList (controllers/user.js)
+  Created middleware for pushOrderInPurchaseList (controllers/user.js)
+
+
+Catagories
+
+  Created route to perform CRUD on category in mongoDB
+  Fixed bug in order model
+  Created CRUD routes for admin for categories (routes/category.js)
+  Created CRUD controllers for admin for categories (controllers/category.js)
+
+
+
 
 
 
