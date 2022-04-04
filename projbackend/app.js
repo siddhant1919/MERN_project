@@ -11,6 +11,7 @@ const cors = require('cors')
 const authRoutes = require('./routes/authentication')
 const userRoutes = require('./routes/user')
 const categoryRoutes = require('./routes/category')
+const productRoutes = require('./routes/product')
 
 
 // PORT
@@ -23,10 +24,11 @@ app.use(cookieParser())
 app.use(cors())
 
 
-// My Routes
+// Original Routes
 app.use("/api", authRoutes)
 app.use("/api", userRoutes)
 app.use("/api", categoryRoutes)
+app.use("/api", productRoutes)
 
 
 // DB Connection
