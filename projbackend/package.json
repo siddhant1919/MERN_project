@@ -2,7 +2,6 @@
   "name": "projbackend",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +19,7 @@
     "formidable": "^2.0.1",
     "i": "^0.3.7",
     "jsonwebtoken": "^8.5.1",
-    "lobash": "^1.0.0",
+    "lodash": "^4.17.21",
     "mongoose": "^6.2.8",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
