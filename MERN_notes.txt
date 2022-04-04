@@ -49,6 +49,10 @@ Dependencies
 
   dotenv       : https://www.npmjs.com/package/dotenv
 
+  formidable   : https://www.npmjs.com/package/formidable
+
+  lodash       : https://lodash.com/
+
   express-validator: https://express-validator.github.io/docs/
 
   How tokens work : https://jwt.io/introduction
@@ -109,6 +113,16 @@ Catagories
   Fixed bug in order model
   Created CRUD routes for admin for categories (routes/category.js)
   Created CRUD controllers for admin for categories (controllers/category.js)
+
+
+Product
+
+  Read about formidable and lobash
+  Created routes to create, update, delete, get the product (routes/product.js)
+  Fixed bug in product model (model/product.js)
+  Created controllers to create, update, delete, get the products (controllers/product.js)
+
+
 
 
 
