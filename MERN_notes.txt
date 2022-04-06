@@ -123,9 +123,12 @@ Product
   Created controllers to create, update, delete, get the products (controllers/product.js)
 
 
+Order
 
-
-
+  created route for order (routes/order.js)
+  created route for order (controllers/order.js)
+  added status in model (model/order.js)
+  
 
 
 
