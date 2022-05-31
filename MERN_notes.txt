@@ -69,8 +69,8 @@ Database models
   created schema for category (models/category.js)
   created schema for product i.e Tshirt (models/product.js)
   created schema for order and productInCart (models/order.js)
-  connected mongoDB to application
   Created Environment variable file (.env)
+  connected mongoDB to application
 
 
 Middlewares
