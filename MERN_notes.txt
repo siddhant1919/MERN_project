@@ -53,9 +53,11 @@ Dependencies
 
   lodash       : https://lodash.com/
 
-  express-validator: https://express-validator.github.io/docs/
+  express-validator     : https://express-validator.github.io/docs/
 
-  How tokens work : https://jwt.io/introduction
+  How tokens work       : https://jwt.io/introduction
+
+  Environment variables : https://serverless-stack.com/chapters/environments-in-create-react-app.html
 
   
 
@@ -129,6 +131,14 @@ Order
   created route for order (controllers/order.js)
   added status in model (model/order.js)
   
+
+FRONTEND
+
+  Made basic file structure in src folder
+  created basic home page
+  created .env to store the url of BACKEND
+  created backend.js to store that url in variable(API)
+  In Base.js Created basic page structure
 
 
 
