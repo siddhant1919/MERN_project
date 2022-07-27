@@ -59,6 +59,9 @@ Dependencies
 
   Environment variables : https://serverless-stack.com/chapters/environments-in-create-react-app.html
 
+
+  https://reacttraining.com/
+
   
 
 
